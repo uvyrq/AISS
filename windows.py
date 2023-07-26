@@ -48,7 +48,7 @@ class ImageViewer(tk.Tk):
                 self.image_label.image = photo
 
                 # Call detect.py and pass the index
-                subprocess.Popen(["python", "detect.py", "--index", str(index)])
+                subprocess.Popen(["python", "detect_modified_lego.py", "--index", str(index)])
         except ValueError:
             pass
 
